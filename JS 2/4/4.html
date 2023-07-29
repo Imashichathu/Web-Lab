@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <select id="dropdownList">
+        <option value="1">Sri Lanka</option>
+        <option value="2">India</option>
+        <option value="3">UK</option>
+        <option value="4">Fiji</option>
+        <option value="5">Australia</option>
+        <option value="6">Oman</option>
+        <option value="7">Canada</option>
+      </select>
+      <br>
+      <br>
+      <button onclick="dropItem()">Drop Item</button>
+
+<script>
+function dropItem() {
+  const dropdown = document.getElementById("dropdownList");
+
+  if (dropdown.options.length === 0) {
+    alert("The dropdown list is empty. There are no items to remove.");
+    return;
+  }
+  dropdown.remove(0);
+}
+</script>
+</body>
+</html>

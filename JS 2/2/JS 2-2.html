@@ -1,0 +1,30 @@
+<html>
+<head>
+  <title>Enable/Disable Video on Mouseover</title>
+</head>
+
+<body>
+
+  <h1>Mouseover the video to play/pause</h1>
+
+  <video id="mv" width="320" height="240" controls>
+    <source src="Video\1.mp4" type="video/mp4">
+
+  </video>
+
+  <script>
+    const video = document.getElementById('mv');
+
+    function playVideo() {
+      video.play();
+    }
+
+    function pauseVideo() {
+      video.pause();
+    }
+
+    video.addEventListener('mouseover', playVideo);
+    video.addEventListener('mouseout', pauseVideo);
+  </script>
+</body>
+</html>
