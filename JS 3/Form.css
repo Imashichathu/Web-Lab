@@ -1,0 +1,48 @@
+table{
+    color: yellow;
+    padding: 10px;
+}
+
+.main{
+    background-color:rgb(58, 50, 50);
+    width: 350px;
+    height: 340px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 80px;
+    padding: 10px;
+
+}
+.top{
+    background-color: rgb(242, 170, 36);
+    padding: 8px;
+    text-align: center;
+}
+
+.under{
+    background-color: rgb(242, 170, 36);
+    padding: 8px;
+}
+ 
+.submit{
+    background-color: rgb(122, 239, 122);
+    width: 80px;
+    height: 30px;
+    color: white;
+    border: none;
+    cursor:pointer;
+}
+
+.cancle{
+    background-color:rgb(223, 76, 76);
+    width: 80px;
+    height: 30px;
+    color: white;
+    border: none;
+    cursor:pointer;
+}
+
+.top a{
+    text-decoration: none;
+    color: azure;
+}
