@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function displayDay() {
+            const num = prompt("Enter a number from 1 to 7:");
+
+
+            const dayNumber = parseInt(num);
+
+
+            if (isNaN(dayNumber) || dayNumber < 1 || dayNumber > 7) {
+                alert("Please enter a valid number between 1 and 7.");
+                return;
+            }
+
+            let dayName;
+
+            switch (dayNumber) {
+                case 1:
+                    dayName = "Monday";
+                    break;
+                case 2:
+                    dayName = "Tuesday";
+                    break;
+                case 3:
+                    dayName = "Wednesday";
+                    break;
+                case 4:
+                    dayName = "Thursday";
+                    break;
+                case 5:
+                    dayName = "Friday";
+                    break;
+                case 6:
+                    dayName = "Saturday";
+                    break;
+                case 7:
+                    dayName = "Sunday";
+                    break;
+            }
+
+            alert('The day of the week is: ' +dayName);
+        }
+    </script>
+
+    <button onclick="displayDay()">Find Day</button>
+
+</body>
+</html>

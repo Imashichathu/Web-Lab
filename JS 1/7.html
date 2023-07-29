@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function calc() {
+            let num1;
+            let num2;
+            num1 = parseFloat(prompt("Enter the first number:"));
+            if (isNaN(num1)) {
+                alert("Please enter a valid number for the first input.");
+                return;
+            }
+
+            num2 = parseFloat(prompt("Enter the second number:"));
+            if (isNaN(num2)) {
+                alert("Please enter a valid number for the second input.");
+                return;
+            }
+
+            const operation = prompt("Enter the operation :\n1. Addition (+)\n2. Subtraction (-)\n3. Division (/)\n4. Multiplication (*)");
+
+            let result;
+            switch (operation) {
+
+                case "+":
+                    result = num1 + num2;
+                    break;
+
+                case "-":
+                    result = num1 - num2;
+                    break;
+
+                case "/":
+                    result = num1 / num2;
+                    break;
+
+                case "*":
+                    result = num1 * num2;
+                    break;
+                    
+                default:
+                    alert("Invalid operation selection. Please try again.");
+                    return;
+            }
+
+            alert('The result of the operation is: '+result);
+        }
+    </script>
+
+    <button onclick="calc()">Calculator</button>
+</body>
+</html>

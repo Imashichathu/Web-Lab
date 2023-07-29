@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <button onclick="calculateAverage()">Grade</button>
+
+
+    <script>
+         function calculateAverage() {
+            let totalMarks = 0;
+            for (let i = 1; i <= 5; i++) {
+                let mark = prompt('Enter mark');
+                mark = parseFloat(mark);
+                
+                if (isNaN(mark) || mark < 0 || mark > 100) {
+                    alert("Please enter a valid mark between 0 and 100.");
+                    return;
+                }
+                
+                totalMarks += mark;
+            }
+
+            const average = totalMarks / 5;
+
+            document.write('Total marks: '+totalMarks+"<br>");
+            document.write( 'Average marks: '+average);
+            
+            if (average >= 80) {
+                alert("Congrats! You passed.");
+            } else if (average < 30) {
+                alert("Better luck next time.");
+            }
+        }
+
+    </script>
+
+</body>
+</html>

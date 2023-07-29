@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function findBirthYear() {
+            const nicNumber = prompt("Enter the student's NIC number:");
+            const by = nicNumber.substring(0, 4);
+
+            if (isNaN(by)) {
+                alert("Invalid NIC format. Please enter a valid NIC number.");
+                return;
+            }
+
+            alert('Year of Birth: ' +by);
+        }
+    </script>
+
+    <button onclick=" findBirthYear()">Find our Birth Year</button>
+</body>
+</html>

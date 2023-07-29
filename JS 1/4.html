@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function calculateCircleArea() {
+            const radius = prompt("Enter the radius: ");
+            
+            // Check if the input is a valid number
+            if (isNaN(radius) || radius <= 0) {
+                alert("Please enter a valid positive number for the radius.");
+                return;
+            }
+            
+            // Calculate the area
+            const pi = 22/7;
+            let area = pi * radius * radius;
+            
+            alert('The area of the circle is: '+ area);
+        }
+    </script>
+
+    <button onclick="calculateCircleArea()">Calculate Area</button>
+</body>
+</html>
